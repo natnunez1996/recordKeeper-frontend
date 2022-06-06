@@ -1,0 +1,21 @@
+.nav__appBar{
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.nav__appBar a{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0.25rem .5rem;
+}
+
+.nav__appBar a.active {
+    color: #7600dc;
+    border: 1px solid #7600dc;
+    border-radius: 10px;
+    /* background: #7600dc; */
+}
+.nav__appBar a.inactive {
+    font-style: italic;
+}

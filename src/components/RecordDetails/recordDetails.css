@@ -1,0 +1,4 @@
+.btn__delete:hover {
+    border: 1px solid red;
+    background-color: gainsboro;
+}
