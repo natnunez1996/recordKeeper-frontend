@@ -38,7 +38,7 @@ const Auth = () => {
     return () => {
       dispatch({ type: CLEAR_MESSAGE });
     };
-  }, []);
+  }, [dispatch]);
 
   const handleSignIn = (e) => {
     e.preventDefault();

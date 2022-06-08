@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Container, Paper, Typography } from "@mui/material";
 import Label from "./Label/Label";
@@ -28,12 +28,6 @@ const UserSettings = () => {
     username: user.result.username,
     password: "●●●●●●●●●●",
   });
-
-  useEffect(() => {
-    if (!user) {
-      navigate("/", { replace: true });
-    }
-  }, []);
 
   const clearVerifyPassword = () => {
     setUpdateSettings({ ...updateSettings, verifyPassword: "" });
